@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#7E5EDB"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locater"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="387dp"
+        android:layout_height="426dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#6E00FB"
+        app:cardBackgroundColor="#6E00FB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="110dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="131dp"
+            android:layout_height="183dp"
+            android:translationX="20dp"
+            android:translationY="20dp"
+            app:cardBackgroundColor="#7E5EDB"
+            app:cardPreventCornerOverlap="true">
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="131dp"
+            android:layout_height="183dp"
+            android:translationX="230dp"
+            android:translationY="20dp"
+            app:cardBackgroundColor="#7E5EDB" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="131dp"
+            android:layout_height="185dp"
+            android:translationX="20dp"
+            android:translationY="210dp"
+            app:cardBackgroundColor="#7E5EDB" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="131dp"
+            android:layout_height="183dp"
+            android:translationY="210dp"
+            app:cardBackgroundColor="#7E5EDB"
+            tools:translationX="230dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:layout_editor_absoluteX="260dp"
+        tools:layout_editor_absoluteY="558dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="135dp"
+        android:layout_height="22dp"
+        android:text="      NEW ROUTES"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

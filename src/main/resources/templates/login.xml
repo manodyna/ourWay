@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="#7E5EDB"
+        android:foregroundTint="#FFFFFF" tools:context=".MainActivity" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.android.com/apk/res-auto ">
+
+    <ImageView android:id="@+id/imageView" android:layout_width="0dp"
+            android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.262" tools:srcCompat="@tools:sample/avatars" />
+
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="408dp"
+            android:layout_height="135dp" android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize" android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.57" />
+
+    <Button android:id="@+id/button" android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Login" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.702" />
+
+    <Button android:id="@+id/button2" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_marginTop="58dp"
+            android:text="Register" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <EditText android:id="@+id/editTextTextPassword" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" android:layout_marginBottom="25dp"
+            android:background="#7E5EDB" android:ems="10" android:inputType="textPassword"
+            android:textColor="@color/white" app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText android:id="@+id/editTextTextPersonName2" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp" android:layout_marginBottom="15dp"
+            android:background="#7E5EDB" android:ems="10" android:inputType="textPersonName"
+            android:text="Name" android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView android:id="@+id/scrollView2" android:layout_width="409dp"
+            android:layout_height="158dp" android:background="#6E00FB"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView android:id="@+id/textView2" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Our Way"
+            android:textColor="@android:color/white" android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+            app:layout_constraintStart_toStartOf="@+id/scrollView2"
+            app:layout_constraintTop_toTopOf="@+id/scrollView2"
+            app:layout_constraintVertical_bias="0.04000002" />
+
+    <TextView android:id="@+id/textView3" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="10dp"
+            android:text="Best way to track your progress." android:textColor="#FFFFFF"
+            android:textSize="20sp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ScrollView android:id="@+id/scrollView3" android:layout_width="409dp"
+            android:layout_height="143dp" android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp" android:layout_marginEnd="1dp"
+            android:layout_marginBottom="16dp" android:background="@color/purple_500"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" />
+    </ScrollView>
+
+    <TextView android:id="@+id/textView4" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text=" Or login with"
+            android:textColor="@color/white" android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@+id/scrollView3"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/scrollView2"
+            app:layout_constraintVertical_bias="0.84000003" />
+</androidx.constraintlayout.widget.ConstraintLayout>

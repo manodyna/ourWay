@@ -21,13 +21,13 @@ public class AppController {
 
     @GetMapping("/")
     public String viewHomePage() {
-        return "index";
+        return "login";
     }
 
     @GetMapping("/register")
     public String showRegistrationForm(Model model) {
         model.addAttribute("user", new User());
-        return "signupForm";
+        return "register";
     }
 
     @PostMapping("/process_register")
@@ -38,12 +38,12 @@ public class AppController {
 
         userRepository.save(user);
 //        emailService.prepareAndSendEmail();
-        return "registrationSuccessPage";
+        return "fig2";
     }
 
     @GetMapping("/loginSuccess")
     public String viewLoginSuccessPage(){
-        return "loginSuccess";
+        return "fig2";
     }
 
 
