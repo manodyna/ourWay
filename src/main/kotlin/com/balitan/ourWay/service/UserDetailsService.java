@@ -2,6 +2,7 @@ package com.balitan.ourWay.service;
 
 import com.balitan.ourWay.login.CustomUserDetails;
 import com.balitan.ourWay.login.User;
+import com.balitan.ourWay.repositories.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

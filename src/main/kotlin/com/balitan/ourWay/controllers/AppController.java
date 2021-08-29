@@ -1,5 +1,9 @@
 package com.balitan.ourWay.controllers;
 
+import com.balitan.ourWay.login.User;
+import com.balitan.ourWay.repositories.UserRepository;
+import com.sun.xml.messaging.saaj.packaging.mime.MessagingException;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
